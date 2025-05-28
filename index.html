@@ -178,16 +178,19 @@
   </section>
 
   <script>
-    const tabs = document.querySelectorAll('.tab');
-    const sections = document.querySelectorAll('section');
+const tabs = document.querySelectorAll('.tab');
+const sections = document.querySelectorAll('section');
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Remove active class from all tabs and sections
-        tabs.forEach(t => t.classList.remove('active'));
-        sections.forEach(s => s.classList.remove('active'));
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Remove active class from all tabs and sections
+    tabs.forEach(t => t.classList.remove('active'));
+    sections.forEach(s => s.classList.remove('active'));
 
-        // Add active class to clicked tab and related section
-        tab.classList.add('active');
-        const target = tab.getAttribute('data-target');
-        document.getElementById(target
+    // Add active class to clicked tab and related section
+    tab.classList.add('active');
+    const target = tab.getAttribute('data-target');
+    document.getElementById(target).classList.add('active');
+  });
+});
+
