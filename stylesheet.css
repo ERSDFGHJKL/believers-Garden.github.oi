@@ -1,0 +1,9 @@
+<h1 class="greeting">As-salamu alaykum</h1>
+
+.greeting {
+  color: darkgreen;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 30px;
+}
