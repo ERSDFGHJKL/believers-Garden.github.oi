@@ -1,57 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Believer's Garden</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-    .tab {
-      background-color: #ddd;
-      border: 1px solid #ccc;
-      padding: 10px 20px;
-      cursor: pointer;
-      margin: 0 5px;
-      border-radius: 5px 5px 0 0;
-      user-select: none;
-    }
-    .tab.active {
-      background-color: white;
-      border-bottom: 1px solid white;
-      font-weight: bold;
-    }
-    section {
-      background-color: white;
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 0 5px 5px 5px;
-      max-width: 900px;
-      margin: 0 auto 30px;
-      display: none;
-    }
-    section.active {
-      display: block;
-    }
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-  </style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #a7f0e3; /* Bright teal background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+  }
+
+  body::before,
+  body::after {
+    content: "🌸🌼🌸🌼🌸🌼🌸🌼🌸🌼🌸🌼";
+    display: block;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  body::before {
+    margin-bottom: 10px;
+  }
+
+  body::after {
+    margin-top: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .tab {
+    background-color: #00c2a8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .tab.active {
+    background-color: #008b7e;
+  }
+
+  section {
+    background-color: #b2fff3;
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    max-width: 900px;
+    margin: 0 auto 30px;
+  }
+
+  section.active {
+    display: block;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  .about-link {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+</style>
 </head>
 <body>
   <h1>📖 The Believer's Garden 📖</h1>
