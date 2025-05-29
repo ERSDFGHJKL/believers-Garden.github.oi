@@ -23,7 +23,6 @@
       max-width: 960px;
       width: 100%;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      position: relative;
     }
 
     .emoji-border {
@@ -37,107 +36,26 @@
       margin-bottom: 30px;
     }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .tab {
-      background-color: #00c2a8;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin: 5px;
-      border-radius: 8px;
-      cursor: not-allowed;
-      opacity: 0.5;
-    }
-
-    .tab.active {
-      background-color: #008b7e;
-      cursor: default;
-      opacity: 1;
-    }
-
     section {
       background-color: #b2fff3;
       padding: 20px;
       border-radius: 12px;
-      display: none;
-    }
-
-    section.active {
-      display: block;
+      margin-bottom: 30px;
     }
 
     ul {
       list-style-type: disc;
       margin-left: 20px;
     }
+
+    h2 {
+      color: #00766c;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="emoji-border">⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐</div>
-
-    <h1>📖 The Believer's Garden 📖</h1>
-
-    <nav>
-      <div class="tab active" data-target="about">About Me</div>
-      <div class="tab" data-target="tafsir">Tafsir</div>
-      <div class="tab" data-target="surahs">Surahs</div>
-      <div class="tab" data-target="seerah">Seerah</div>
-      <div class="tab" data-target="fiqh">Fiqh</div>
-    </nav>
-
-    <section id="about" class="active">
-      <h2>About Me</h2>
-      <p>My name is Aneeqa Mohiuddin. I am 11 years old. I love learning about Islam and would love you to be along with me on this journey. I like basketball, tennis, football, double touch football, and I like coding.</p>
-    </section>
-
-    <section id="tafsir">
-      <h2>Tafsir</h2>
-      <p>Tafsir is the explanation and interpretation of the Quranic verses, providing clarity and understanding of its teachings and messages.</p>
-    </section>
-
-    <section id="surahs">
-      <h2>Surahs</h2>
-      <p>Short summaries of important surahs go here.</p>
-    </section>
-
-    <section id="seerah">
-      <h2>Seerah</h2>
-      <p>Stories about the life of Prophet Muhammad ﷺ go here.</p>
-    </section>
-
-    <section id="fiqh">
-      <h2>Fiqh</h2>
-      <p>Islamic rules about prayer, fasting, and more go here.</p>
-    </section>
-
-    <div class="emoji-border">⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐</div>
-  </div>
-
-  <script>
-    // Tabs should not be clickable except the first one
-    const tabs = document.querySelectorAll('.tab');
-    const sections = document.querySelectorAll('section');
-
-    tabs.forEach((tab, index) => {
-      tab.addEventListener('click', () => {
-        if (index === 0) {
-          tabs.forEach(t => t.classList.remove('active'));
-          sections.forEach(s => s.classList.remove('active'));
-          tab.classList.add('active');
-          document.getElementById(tab.getAttribute('data-target')).classList.add('active');
-        }
-      });
-    });
-  </script>
-</body>
-</html>
 
   <h1>🧕🏻 The Believer's Garden 👳🏻‍♂️</h1>
 
@@ -262,20 +180,7 @@
     <p>Fiqh helps Muslims live in a way that pleases Allah and benefits everyone.</p>
   </section>
 
-  <script>
-const tabs = document.querySelectorAll('.tab');
-const sections = document.querySelectorAll('section');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // Remove active class from all tabs and sections
-    tabs.forEach(t => t.classList.remove('active'));
-    sections.forEach(s => s.classList.remove('active'));
-
-    // Add active class to clicked tab and related section
-    tab.classList.add('active');
-    const target = tab.getAttribute('data-target');
-    document.getElementById(target).classList.add('active');
-  });
-});
-
+<div class="emoji-border">⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐📖⭐</div>
+  </div>
+</body>
+</html>
